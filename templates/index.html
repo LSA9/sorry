@@ -1,17 +1,200 @@
+<!DOCTYPE html>
+
 <html>
 
 <body>
 
 <style type="text/css">
-    body{
-        background-image: url("http://allaboutfunandgames.com/wp-content/uploads/2011/09/102_0095.jpg");
+    #board{
+        background-image: url("https://raw.githubusercontent.com/LSA9/sorry/master/images/board2.jpg");
+        background-position: 100% 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position: center center;
+        width: 70%;
+        height: 100%;
+        margin-left: 15%;
+        margin-right: 15%;
+        position: fixed;
     }
+
+    .yellowPiece{
+        background-image: url("https://raw.githubusercontent.com/LSA9/sorry/master/images/yellowpiece.png");
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    #yellowPiece1{
+        width: 4%;
+        height: 4%;
+        top: 18%;
+        left: 27.5%;
+        position: absolute;
+    }
+
+    #yellowPiece2{
+        width: 4%;
+        height: 4%;
+        top: 13%;
+        left: 23%;
+        position: absolute;
+    }
+
+    #yellowPiece3{
+        width: 4%;
+        height: 4%;
+        top: 13%;
+        left: 32%;
+        position: absolute;
+    }
+
+    #yellowPiece4{
+        width: 4%;
+        height: 4%;
+        top: 9%;
+        left: 27.5%;
+        position: absolute;
+    }
+
+    .greenPiece{
+        background-image: url("https://raw.githubusercontent.com/LSA9/sorry/master/images/greenpiece.png");
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    #greenPiece1{
+        width: 4%;
+        height: 4%;
+        top: 23%;
+        left: 83%;
+        position: absolute;
+    }
+
+    #greenPiece2{
+        width: 4%;
+        height: 4%;
+        top: 27%;
+        left: 79%;
+        position: absolute;
+    }
+
+    #greenPiece3{
+        width: 4%;
+        height: 4%;
+        top: 31%;
+        left: 83%;
+        position: absolute;
+    }
+
+    #greenPiece4{
+        width: 4%;
+        height: 4%;
+        top: 27%;
+        left: 87%;
+        position: absolute;
+    }
+
+
+    .redPiece{
+        background-image: url("https://raw.githubusercontent.com/LSA9/sorry/master/images/redpiece.png");
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    #redPiece1{
+        width: 4%;
+        height: 4%;
+        top: 78%;
+        left: 69.5%;
+        position: absolute;
+    }
+
+    #redPiece2{
+        width: 4%;
+        height: 4%;
+        top: 82%;
+        left: 73.5%;
+        position: absolute;
+    }
+
+    #redPiece3{
+        width: 4%;
+        height: 4%;
+        top: 82%;
+        left: 65.5%;
+        position: absolute;
+    }
+
+    #redPiece4{
+        width: 4%;
+        height: 4%;
+        top: 85.5%;
+        left: 69.5%;
+        position: absolute;
+    }
+
+    .bluePiece{
+        background-image: url("https://raw.githubusercontent.com/LSA9/sorry/master/images/bluepiece.png");
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    #bluePiece1{
+        width: 4%;
+        height: 4%;
+        top: 69%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #bluePiece2{
+        width: 4%;
+        height: 4%;
+        top: 65%;
+        left: 14%;
+        position: absolute;
+    }
+
+    #bluePiece3{
+        width: 4%;
+        height: 4%;
+        top: 73%;
+        left: 14%;
+        position: absolute;
+    }
+
+    #bluePiece4{
+        width: 4%;
+        height: 4%;
+        top: 69%;
+        left: 18%;
+        position: absolute;
+    }
+
+
 </style>
 
+<div class="boardgame" id="board">
+    <div class="redPiece" id="redPiece1" onclick="getActiveId(this)"></div>
+    <div class="redPiece" id="redPiece2" onclick="getActiveId(this)"></div>
+    <div class="redPiece" id="redPiece3" onclick="getActiveId(this)"></div>
+    <div class="redPiece" id="redPiece4" onclick="getActiveId(this)"></div>
 
+    <div class="bluePiece" id="bluePiece1" onclick="getActiveId(this)"></div>
+    <div class="bluePiece" id="bluePiece2" onclick="getActiveId(this)"></div>
+    <div class="bluePiece" id="bluePiece3" onclick="getActiveId(this)"></div>
+    <div class="bluePiece" id="bluePiece4" onclick="getActiveId(this)"></div>
+
+    <div class="yellowPiece" id="yellowPiece1" onclick="getActiveId(this)"></div>
+    <div class="yellowPiece" id="yellowPiece2" onclick="getActiveId(this)"></div>
+    <div class="yellowPiece" id="yellowPiece3" onclick="getActiveId(this)"></div>
+    <div class="yellowPiece" id="yellowPiece4" onclick="getActiveId(this)"></div>
+
+    <div class="greenPiece" id="greenPiece1" onclick="getActiveId(this)"></div>
+    <div class="greenPiece" id="greenPiece2" onclick="getActiveId(this)"></div>
+    <div class="greenPiece" id="greenPiece3" onclick="getActiveId(this)"></div>
+    <div class="greenPiece" id="greenPiece4" onclick="getActiveId(this)"></div>
+
+</div>
 
 
 </body>
